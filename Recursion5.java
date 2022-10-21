@@ -1,23 +1,23 @@
  class Recursion5
 {
-	public static int calcPower(int x,int n)
+	public static int calcPower(int a,int n)
 	{
 		if(n==0)
 		{
 		return 1;
 		}
-		if (x==0)
+		if (a==0)
 		{	
 			return 0;
 		}
-		int xPownm1=calcPower(x,n-1);
-		int xPown=x*xPownm1;
-		return xPown;
+		int aPownm1=calcPower(a,n-1);
+		int aPown=a*aPownm1;
+		return aPown;
 	}
 	public static void main(String args[])
 	{
-		int n=6,x=2;
-		int ans=calcPower(x,n);
+		int n=8,a=2;
+		int ans=calcPower(a,n);
 		System.out.println(ans);
 	
 		
